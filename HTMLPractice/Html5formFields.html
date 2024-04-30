@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>HTML5 Form Fields and Validtion</title>
+
+<head>
+
+</head>
+
+<body>
+    <h1>HTML5 Form Fields and Validtion</h1>
+    <form>
+        <!--Email input type-->
+        <p>
+            <label for="email">Email :</label>
+            <input type="email" name="email_id" id="email" required>
+        </p>
+
+         <!--Age input type-->
+        <p>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" required min="18" max="99">
+        </p>
+        <p>
+             <!--Date input type-->
+            <label for ="dob">Date Of Birth:</label>
+            <input type = "date" name="date" id="dob">
+        </p>
+
+         <!--range input type-->
+        <p>
+            <label for="price">Price Range:</label>
+            <input type="range" name="price" id = "price" min="0" max="1000">
+           </p>
+        <p>
+
+        <!--url input type-->
+            
+            <label for="website">website:</label>
+            <input type="url" name="website" id = "website">
+        </p>
+
+        <p>
+
+            <!--Time input type-->
+                
+                <label for="entrytime">website:</label>
+                <input type="time" name="entrytime" id = "entrytime">
+            </p>
+
+            <p>
+
+                <!--search input type-->
+                    
+                    <label for="job_search">Job Serach:</label>
+                    <input type="search" name="job_search" id = "job_search">
+                </p>
+        
+        <input type="submit" value="Submit">
+         
+    </form>
+</body>
+
+</html>

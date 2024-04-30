@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>Basic Form</title>
+
+<head>
+
+</head>
+
+<body>
+
+    <form method="POST" action="procees.php" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Login Form</legend>
+            <p>
+                UserNmae :<br>
+                <input type="text" name="username" size="10" maxlength="20" placeholder="Enter userName">
+            </p>
+            <p>
+                Password<br>
+                <input type="password" name="pwd" placeholder="Enter Password">
+            </p>
+
+            <p><input type="submit" name="login-button" value="send"></p>
+
+
+        </fieldset>
+        <!--Practice-->
+        <fieldset>
+            <legend>Contact Form</legend>
+
+            <p>
+                <label> Name:</label> <br>
+                <input type=" text" name="name">
+            </p>
+            <p>
+                <label> Email:</label> <br>
+                <input type=" text" name="email">
+            </p>
+            <p>
+                <label>subject:</label> <br>
+                <input type=" text" name="subject">
+            </p>
+            <p>
+                <label> want to learn first </label><br>
+                <input type="radio" name="learn_first" id="html" value="HTML" checked><label for="html">HTML</label>
+                <input type="radio" name="learn_first" id="css" value="CSS"><label for="css">CSS</label>
+                <input type="radio" name="learn_first" id="js" value="JS"><label for="js">JS</label>
+            </p>
+            <p>
+                what you want to learn for FullStack Development<br>
+                <input type="checkbox" name="userChoice[]" value="html">Html<br>
+                <input type="checkbox" name="userChoice[]" value="css">css<br>
+                <input type="checkbox" name="userChoice[]" value="js">javascript<br>
+                <input type="checkbox" name="userChoice[]" value="java">java<br>
+            </p>
+            <p>
+                Select The Score: <br>
+                <select name="Score">
+                    <option value="selet">Select</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+
+                </select>
+            </p>
+            <p>
+                Your Resume: <br>
+                <input type="file" name="resume">
+            </p>
+
+            <p>
+                Message:<br>
+                <textarea cols="20" rows="10" placeholder="Comment"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="submit" name="Cantactform">
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
